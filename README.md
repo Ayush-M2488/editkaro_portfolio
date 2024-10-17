@@ -1,4 +1,4 @@
-# EditKaro.in    (Set google chrome zoom to 75% for best layout view)
+# EditKaro.in    (Set google chrome zoom to 75% or 67% for best layout view)
 
 Welcome to EditKaro.in, your premier social media marketing and video editing agency! This project showcases our services, portfolio, and contact information through a responsive and interactive web application.
 
