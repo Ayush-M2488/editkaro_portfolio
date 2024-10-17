@@ -67,3 +67,17 @@ function openVideoModal(videoFile) {
   modal.style.display = 'flex'; // Show the modal
   videoPlayer.play(); // Start playing the video
 }
+// Function to open the popup
+function openPopup() {
+    document.getElementById('popupModal').style.display = 'flex';
+}
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById('popupModal').style.display = 'none';
+}
+
+// Open the popup when the window loads
+window.onload = function() {
+    openPopup();
+};
