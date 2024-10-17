@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditKaro.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo" /> <!-- Replace with your logo path -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content" id="home">
+        
+        <h1 class="welcome-text">Welcome to</h1>
+        <h1 class="editkaro-text">EditKaro.in</h1>
+        <p class="tagline">Your Premier Social Media Marketing and Video Editing Agency.</p>
+        
+        <!-- Button -->
+        <a href="#portfolio" class="cta-button">Our Work</a>
+        
+        <!-- About Section -->
+        <div id="about" class="about-section">
+                        <div class="about-text">
+                <h2 class="about">About Editkaro.in</h2>
+                <p class="paragraph">
+                  Editkaro.in is a leading video editing and social media marketing agency, dedicated to crafting compelling visual stories that resonate with your audience. Founded with a passion for creativity and innovation, we specialize in delivering tailored solutions for individuals, influencers, and businesses across all industries. Our expertise ranges from fast-paced, attention-grabbing short-form content to in-depth, cinematic long-form videos.
+                </p>
+                <p class="paragraph">
+                  Our mission is simple: To elevate your brand through powerful storytelling, seamless editing, and strategic video marketing solutions. With a team of skilled professionals, we ensure that each project is handled with precision, creativity, and a commitment to excellence.<br><br>
+
+                  At Editkaro.in, we don’t just edit videos; we create experiences that leave a lasting impression.
+                </p>
+                <!-- Get Started Button Below About Us Text -->
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services" class="services-box">
+            <div class="services-title">Our Services:</div>
+            <div class="service-item" onclick="toggleActive(this)">
+                <i class="fas fa-video service-icon"></i>
+                <p class="service-name">Video Editing</p>
+                <p class="service-description">Our team transforms raw footage into professional, engaging videos that tell your brand's story effectively.</p>
+            </div>
+            <div class="service-item" onclick="toggleActive(this)">
+                <i class="fas fa-chart-line service-icon"></i>
+                <p class="service-name">Digital Marketing Strategy</p>
+                <p class="service-description">We develop targeted strategies to increase your online presence and drive traffic to your brand.</p>
+            </div>
+            <div class="service-item" onclick="toggleActive(this)">
+                <i class="fas fa-pencil-alt service-icon"></i>
+                <p class="service-name">Content Creation</p>
+                <p class="service-description">Our team creates compelling content that resonates with your audience, helping you establish authority in your niche.</p>
+            </div>
+            <div class="service-item" onclick="toggleActive(this)">
+                <i class="fas fa-flag service-icon"></i>
+                <p class="service-name">Brand Development</p>
+                <p class="service-description">We help you build a strong brand identity that resonates with your target audience and stands out in the market.</p>
+            </div>
+        </div>
+
+        <!-- Our Portfolio Section -->
+        <div id="portfolio">
+            <div class="portfolio-title">Our Portfolio</div>
+            <!-- Category Buttons -->
+            <div class="category-buttons">
+                <a href="#short-form-videos" class="category-button" onclick="playVideo('videos/short_form.mp4')">Short-Form Video</a>
+                <a href="#long-form-videos" class="category-button" onclick="playVideo('videos/longform.mp4')">Long-Form Videos</a>
+                <a href="#gaming-videos" class="category-button" onclick="playVideo('videos/gaming.mp4')">Gaming Videos</a>
+                <a href="#football-edits" class="category-button" onclick="playVideo('videos/football.mp4')">Football Edits</a>
+                <a href="#ecommerce-ads" class="category-button" onclick="playVideo('videos/ecommerce.mp4')">eCommerce Ads</a>
+                <a href="#documentary-style" class="category-button" onclick="playVideo('videos/documentary.mp4')">Documentary Style</a>
+                <a href="#color-grading" class="category-button" onclick="playVideo('videos/color.mp4')">Color Grading</a>
+                <a href="#anime-videos" class="category-button" onclick="playVideo('videos/anime.mp4')">Anime Videos</a>
+                <a href="#ads" class="category-button" onclick="openVideoModal('videos/ad.mp4')">Ads</a>
+            </div>
+
+            <div class="category-buttons">
+                <div class="portfolio-box" onclick="playVideo('videos/short_form.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="shortform.jpg" alt="Short-Form Videos" class="portfolio-image">
+                    <div>Short-Form Videos</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/longform.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="longform.jpg" alt="Long-Form Videos" class="portfolio-image">
+                    <div>Long-Form Videos</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/gaming.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="gaming.jpg" alt="Gaming Videos" class="portfolio-image">
+                    <div>Gaming Videos</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/football.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="football.jpg" alt="Football Edits" class="portfolio-image">
+                    <div>Football Edits</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/ecommerce.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="ecommerce.jpg" alt="eCommerce Ads" class="portfolio-image">
+                    <div>eCommerce Ads</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/documentary.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="documentary.jpg" alt="Documentary Style" class="portfolio-image">
+                    <div>Documentary Style</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/color.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="colorgrading.jpg" alt="Color Grading" class="portfolio-image">
+                    <div>Color Grading</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/anime.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    <img src="anime.jpg" alt="Anime Videos" class="portfolio-image">
+                    <div>Anime Videos</div>
+                </div>
+                <div class="portfolio-box" onclick="playVideo('videos/ad.mp4')">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i> <!-- Play icon -->
+                    </div>
+                    
+                    <img src="ads.jpg" alt="Ads" class="portfolio-image">
+                    <div>Ads</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div id="contact" class="contact-section">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Phone: +1 (123) 098765432</p>
+                <p>Email: info@Editkaro.in</p>
+                <p>Address: 123456 EditKaro Lane, asc def ghi Creative City, CR 12345</p>
+                <button class="cta-button" onclick="openForm()">Contact Form</button>
+                <div class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button onclick="sendForm()">Send</button>
+                    <button onclick="closeForm()">Cancel</button>
+                </div>
+            </div>
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <a href="https://www.instagram.com" class="social-button" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.youtube.com" class="social-button"><i class="fab fa-youtube" target="_blank"></i> YouTube</a>
+                <a href="https://www.x.com" class="social-button"><i class="fab fa-x" target="_blank"></i> X</a>
+                <a href="https://www.linkedin.com" class="social-button" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.github.com" class="social-button"><i class="fab fa-github" target="_blank"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <video id="videoPlayer" class="modal-content" controls>
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Edit Karo</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</html>
